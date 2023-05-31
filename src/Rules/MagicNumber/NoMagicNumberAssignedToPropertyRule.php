@@ -30,6 +30,8 @@ final class NoMagicNumberAssignedToPropertyRule extends AbstractMagicNumberRule
             return [];
         }
 
+        // trigger a change
+
         return [
             RuleErrorBuilder::message(self::ERROR_MESSAGE)->line($node->getLine())->build(),
         ];
